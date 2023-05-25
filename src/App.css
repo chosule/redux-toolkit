@@ -1,13 +1,22 @@
+@font-face {
+  font-family: 'IBMPlexSansKR-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'IBMPlexSansKR-Regular';
+
 }
 
 html {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  background: #333;
-  color: whitesmoke;
+  background: #fff;
+  color: #000;
 }
 
 body {
@@ -24,9 +33,20 @@ select {
   margin-bottom: 1em;
 }
 
+input,
+select,
+textarea {
+  border-radius: 6px;
+}
+
+textarea {
+  resize: none;
+}
+
 main {
-  max-width: 500px;
+  display: flex;
   margin: auto;
+  gap: 90px;
 }
 
 section {
@@ -35,9 +55,9 @@ section {
 
 article {
   margin: 0.5em 0.5em 0.5em 0;
-  border: 1px solid whitesmoke;
-  border-radius: 10px;
   padding: 1em;
+  box-shadow: 5px 20px 24px 5px grey;
+
 }
 
 h1 {
@@ -54,6 +74,7 @@ p {
 form {
   display: flex;
   flex-direction: column;
+  gap: 13px;
 }
 
 .postCredit {
@@ -64,6 +85,7 @@ form {
   margin: 0 0.25em 0 0;
   background: transparent;
   border: none;
-  color: whitesmoke;
+  color: firebrick;
+  font-weight: 600;
   font-size: 1rem;
 }
