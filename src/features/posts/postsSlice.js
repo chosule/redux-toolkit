@@ -36,10 +36,12 @@ const initialState = {
     // },
 }
 
+//get
 export const fetchPosts = createAsyncThunk('posts/fetchPosts', async () => {
     const response = await axios.get(POSTS_URL)
     return response.data
 })
+//post
 export const addNewPost = createAsyncThunk('posts/addNewPost', async (initialPost) => {
     const response = await axios.post(POSTS_URL, initialPost)
     return response.data

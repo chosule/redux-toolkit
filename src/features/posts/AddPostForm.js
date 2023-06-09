@@ -14,7 +14,7 @@ const AddPostForm = () => {
     const [userId, setUserId] = useState("");
 
     const onTitleChanged = (e) => setTitle(e.target.value);
-    console.log(title);
+    // console.log(title);
 
     const onContentChanged = (e) => setContent(e.target.value);
 
